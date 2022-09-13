@@ -19,7 +19,7 @@ public class MvcConfig implements WebMvcConfigurer {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/v1/**") 
                 
-                 .allowedOrigins( "http://192.168.100.5:4200" ) // CAMBIAR CON DOMINIO DEL FRONTEND 
+                 .allowedOrigins( "http://192.168.100.5:4200","https://app-fractalweb-test.herokuapp.com" ) // CAMBIAR CON DOMINIO DEL FRONTEND 
                  .allowedMethods("GET","POST","PUT","DELETE") 
 	           	 .maxAge(3600);
             }
