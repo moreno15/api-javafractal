@@ -21,6 +21,7 @@ public class MvcConfig implements WebMvcConfigurer {
                 
                  .allowedOrigins( "http://192.168.100.5:4200","https://fractal-test-a4b45.web.app" ) // CAMBIAR CON DOMINIO DEL FRONTEND 
                  .allowedMethods("GET","POST","PUT","DELETE") 
+                 .allowedHeaders("*")
 	           	 .maxAge(3600);
             }
         };
